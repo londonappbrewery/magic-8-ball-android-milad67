@@ -1,13 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:id="@+id/activity_main"
+<RelativeLayout android:id="@+id/activity_main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
-    android:paddingBottom="16dp"
-    tools:context=".MainActivity">
+
+    android:padding="16dp"
+    android:background="@android:color/holo_blue_bright"
+    tools:context=".MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/make_everyday"
+            android:id="@+id/appTextView"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="60dp"/>
+
+        <ImageView
+            android:id="@+id/eightBallImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/ball1_2x"
+            android:layout_below="@+id/appTextView"
+            android:layout_marginTop="30dp"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/askButton"
+            android:text="@string/ask"
+            android:textColor="@android:color/white"
+            android:background="@color/backgroundColor"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/eightBallImageView"
+            android:layout_marginTop="50dp"/>
+
 </RelativeLayout>
